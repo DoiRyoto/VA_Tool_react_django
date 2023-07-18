@@ -1,5 +1,4 @@
 import CSVReader from "./data_reader/csvReader"
-import LinePlot from "./chart/line_plot"
 import React, { useContext, useState} from "react"
 import JSONReader from "./data_reader/jsonReader";
 
@@ -9,7 +8,6 @@ function ApplyDataToVis() {
 
     return (
         <div>
-            <LinePlot data={data} />
             <CSVReader setData={setData} />
         </div>
     )
